@@ -390,6 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This scatterplot compares playing time to production for Power 5 guards. Once you filter for players above 1000 minutes and a production rate over 0.70, the group becomes almost entirely juniors and seniors . That top percent shows us that older guards are able to perform in big games, and can sustain their play throughout the long season better than younger guards.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -408,8 +409,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Class <span class="sc">==</span> <span class="st">"JR"</span> <span class="sc">|</span> Class <span class="sc">==</span> <span class="st">"SR"</span>)</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>(<span class="at">data =</span> young_pg, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">"Younger PG"</span>, <span class="at">y =</span> TurnRatio), <span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">data =</span> old_pg, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">"Older PG"</span>, <span class="at">y =</span> TurnRatio), <span class="at">fill =</span> <span class="st">"red"</span>)  <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>(<span class="at">data =</span> young_pg, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">"Younger PG's"</span>, <span class="at">y =</span> TurnRatio), <span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">data =</span> old_pg, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">"Older PG's"</span>, <span class="at">y =</span> TurnRatio), <span class="at">fill =</span> <span class="st">"red"</span>)  <span class="sc">+</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Experienced point guards protect the ball better in big games."</span>,</span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Assist-to-Turnover ratio among Power 5 guards"</span>,</span>
@@ -433,6 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This box plot shows that older guards don’t turn the ball over as much in big games as younger guards. The higher stake games speed up the tempo and could lead to an inexperienced guard getting rushed. The older guard’s median assist-to-turnover ratio is higher, meaning veterans turn the ball over less while still passing and getting assists. This is huge in postseason play because every possession matters and the point guard is the tone setter.</p>
 
 
 
