@@ -195,7 +195,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>The “Notorious” Conor McGregor hit the UFC scene in 2013 and forever changed the trajectory of the sport.Through his antics, his showmanship, and pure skill Conor elevated what people expected from their favorite UFC fighter. McGregor’s fight style and the way he marketed himself was something the UFC scene needed. Whether you liked Conor McGregor or not, you watched. His rise was pivotal for the UFC, because the UFC was really struggling with viewership for a long time. Dana White saw Conor McGregor as more than a fighter and helped elevate him into an international star. The biggest effect Conor had on the sport was the major spike in PPV for his events.McGregor was pulling in numbers we have never seen before and was doing it in multiple ways. Even his pre-fight press conferences and weigh-in’s were generating millions of impressions and views on social media.</p>
+<p>The “Notorious” Conor McGregor hit the UFC scene in 2013 and forever changed the trajectory of the sport.Through his antics, his showmanship, and pure skill Conor elevated what people expected from their favorite UFC fighter. McGregor’s fight style and the way he marketed himself was something the UFC scene needed. Whether you liked Conor McGregor or not, you watched. His rise was pivotal for the UFC, because the UFC was really struggling with viewership for a long time. Dana White saw Conor McGregor as more than a fighter and helped elevate him into an international star.</p>
+<p>The biggest effect Conor had on the sport was the major spike in PPV for his events.McGregor was pulling in numbers we have never seen before and was doing it in multiple ways. Even his pre-fight press conferences and weigh-in’s were generating millions of impressions and views on social media.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -236,7 +237,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data =</span> bestfight, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> PPV_Sales, <span class="at">label =</span> <span class="st">`</span><span class="at">Event-Name</span><span class="st">`</span>), <span class="at">size =</span> <span class="dv">4</span>)<span class="sc">+</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"McGregor Events Generated the Highest PPV in UFC History"</span>,</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"PPV(pay-per-view) sales in the UFC had been fluctuating for years until McGregor(shown in green) started fighting. McGregor's likeness exploded which lead to a steady growth and an all-time high in PPV. "</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"PPV(pay-per-view) sales in the UFC had been fluctuating for years until McGregor(shown in green) started</span><span class="sc">\n</span><span class="st">fighting. McGregor's likeness exploded which lead to a steady growth and an all-time high in PPV. "</span>,</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Date"</span>,</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"PPV Sales($$$)"</span>,</span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source:Kaggle (The Ultimate UFC Dataset by Prashanth Saravanan) | By Turner Ahrens"</span></span>
@@ -258,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Since 2000, the average fight times for all fighters in the UFC have been generally around the same time every year. Something the UFC has never seen before was somebody with the unpredictability of Conor McGregor. You never knew whether he was going to come out and try to end the fight in one round or put on a show for five rounds in a title bout. He had the ability to end a fight in 40 seconds like he did to Donold Cerone or go deep in the 4th round with the best wrestler ever, Khabib Nurmagomadov. It was different, it was entertaining, and it changed how other fighters fought.People often undermine the fighting ability of McGregor because of his personality, but he was one of the most eletric, fast paced fighters in UFC history.</p>
+<p>Since 2000, the average fight times for all fighters in the UFC have been generally around the same time every year. Something the UFC has never seen before was somebody with the unpredictability of Conor McGregor. You never knew whether he was going to come out and try to end the fight in one round or put on a show for five rounds in a title bout. He had the ability to end a fight in 40 seconds like he did to Donold Cerrone or go deep in the 4th round with the best wrestler ever, Khabib Nurmagomedov. It was different, it was entertaining, and it changed how other fighters fought.People often undermine the fighting ability of McGregor because of his personality, but he was one of the most eletric, fast paced fighters in UFC history.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -290,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dumbbell</span>(<span class="at">data =</span> fight_time,<span class="fu">aes</span>( <span class="at">y =</span> FightYear,<span class="at">x =</span> <span class="st">`</span><span class="at">All Fighters</span><span class="st">`</span>,<span class="at">xend =</span> McGregor),<span class="at">size =</span> <span class="fl">3.5</span>,<span class="at">colour =</span> <span class="st">"grey"</span>,<span class="at">colour_x =</span> <span class="st">"black"</span>,<span class="at">colour_xend =</span> <span class="st">"orange"</span>) <span class="sc">+</span></span>
 <span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"McGregor's Unpredictability was Must-See-TV"</span>,</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing average fight length in seconds of all UFC fighters to Conor McGregor (shown in orange)."</span>,</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing the average fight length in seconds of all UFC fighters(shown in black) to </span><span class="sc">\n</span><span class="st">Conor McGregor's average fight times per year. (shown in orange)."</span>,</span>
 <span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Average fight length (seconds)"</span>,</span>
 <span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Year"</span>,</span>
 <span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Kaggle (The Ultimate UFC Dataset by Prashanth Saravanan) | By Turner Ahrens"</span></span>
@@ -312,7 +313,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Paragraph 3 Conor McGregor was not just a showman through his fashion and tactics, he was a showman through his fighting style. Before McGregor, fights in the UFC had way less action and was way more about trying to make it to a judges decision. Conor was one of the first fighters to throw that out that window, and go all in on “I’m going to throw more punches than you,” he notoriously told Nate Diaz in a press conference.</p>
+<p>Paragraph 3 Conor McGregor was not just a showman through his fashion and tactics, he was a showman through his fighting style. Before McGregor, fights in the UFC had way less action and were way more about trying to make it to a judges decision. Conor was one of the first fighters to throw that out that window, and go all in on “I’m going to throw more punches than you,” he notoriously told Nate Diaz in a press conference.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -372,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>bar_sig <span class="sc">+</span> bar_total <span class="sc">+</span></span>
 <span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(</span>
 <span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"The UFC had never seen a fighter strike like McGregor"</span>,</span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing McGregor’sstriking statistics to the UFC fighters before him."</span>,</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing McGregor’s striking statistics to the UFC fighters before him."</span>,</span>
 <span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Kaggle (The Ultimate UFC Dataset by Prashanth Saravanan) | By Turner Ahrens"</span></span>
 <span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">&amp;</span> </span>
 <span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
@@ -391,6 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>In conclusion, Conor McGregor did not just change the climate of the UFC financially but he changed what people expected in a UFC fight and he did it more than any fighter ever.</p>
 
 
 
